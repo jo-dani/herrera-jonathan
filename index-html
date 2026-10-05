@@ -1,1 +1,2031 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sabores del Mundo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Sabores del Mundo</h1>
+
+    <p>
+        Un viaje gastronómico sin pasaporte. De tu cocina al mundo.
+    </p>
+
+    <nav class="menu">
+
+        <a href="#latinoamerica">Latinoamérica</a>
+
+        <a href="#europa">Europa</a>
+
+        <a href="#asia">Asia</a>
+
+        <a href="#zona-recetas">Recetas</a>
+
+    </nav>
+    <button id="botonModo">🌙 Modo oscuro</button>
+    <a href="quiz.html" class="boton-quiz">🧠 Ir al Quiz</a>
+    <a href="tareas.html" class="boton-tareas">📝 Lista de tareas</a>
+
+</header>
+
+
+<main>
+
+
+    <!-- ==========================================
+         EJERCICIO 1
+         ========================================== -->
+
+    <section class="seccion-intro">
+
+        <h2 id="tituloBienvenida">
+            Bienvenidos
+        </h2>
+
+        <button id="botonCambiar">
+            Cambiar texto
+        </button>
+
+        <p id="textoPagina">
+            Explorá 16 recetas de 3 continentes.
+            Clickeá en el botón naranja para ver la receta
+            completa en la misma página.
+        </p>
+
+        <div class="botones-tamano">
+
+            <button id="disminuir">
+                A-
+            </button>
+
+            <button id="normal">
+                A
+            </button>
+
+            <button id="aumentar">
+                A+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         EJERCICIO 3 - CARRUSEL
+         ========================================== -->
+
+    <div class="ejercicio-box">
+
+        <h2>
+            Galería de Sabores
+        </h2>
+
+        <div class="carrusel">
+
+            <button id="anterior">
+                ⬅️
+            </button>
+
+            <img
+                id="imagenCarrusel"
+                src="https://www.parati.com.ar/wp-content/uploads/2026/05/EMPANADAS-DESTACADA-749x561.jpg.webp?v=2"
+                alt="Imagen del carrusel"
+                width="300"
+            >
+
+            <button id="siguiente">
+                ➡️
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         EJERCICIO 2 - VOLVER ARRIBA
+         ========================================== -->
+
+    <button id="volverArriba">
+        ↑ Volver arriba
+    </button>
+
+
+
+    <!-- ==========================================
+         LATINOAMÉRICA
+         ========================================== -->
+
+    <h2 id="latinoamerica" class="titulo-continente">
+        Latinoamérica
+    </h2>
+
+    <div class="info-extra oculto">
+
+        <p>
+            🌎 ¡Dato! En Latinoamérica existen más de 50 tipos
+            de empanadas distintas según el repulgue.
+        </p>
+
+    </div>
+
+    <button class="btn-ver-mas-continente">
+        Ver más
+    </button>
+
+
+    <section class="contenedor-cards">
+
+
+        <!-- EMPANADAS -->
+
+        <article class="card card-argentina">
+
+            <img
+                src="https://www.parati.com.ar/wp-content/uploads/2026/05/EMPANADAS-DESTACADA-749x561.jpg.webp?v=2"
+                alt="Empanadas Criollas"
+            >
+
+            <span class="tag">
+                Argentina
+            </span>
+
+            <h3>
+                Empanadas Criollas
+            </h3>
+
+            <p>
+                Carne cortada a cuchillo, cebolla y huevo.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-empanadas"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- TACOS -->
+
+        <article class="card card-mexico">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvmYqPvhm_nJIhjVBsAzHS3Wxc7tWvgLKC6jczs4Y3QpLoXCltSv0geUrw&s=10"
+                alt="Tacos al Pastor"
+            >
+
+            <span class="tag">
+                México
+            </span>
+
+            <h3>
+                Tacos al Pastor
+            </h3>
+
+            <p>
+                Cerdo marinado, piña y cilantro.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-tacos"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- CEVICHE -->
+
+        <article class="card card-peru">
+
+            <img
+                src="https://recetasdelabuelo.com/wp-content/uploads/2026/04/Ceviche_peruano_casero.webp"
+                alt="Ceviche"
+            >
+
+            <span class="tag">
+                Perú
+            </span>
+
+            <h3>
+                Ceviche
+            </h3>
+
+            <p>
+                Pescado fresco marinado en limón y ají.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-ceviche"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- AREPA -->
+
+        <article class="card card-colombia">
+
+            <img
+                src="https://www.laylita.com/recetas/wp-content/uploads/2021/02/Arepa-reina-pepiada-receta-venezolana.jpg"
+                alt="Arepa Reina"
+            >
+
+            <span class="tag">
+                Colombia
+            </span>
+
+            <h3>
+                Arepa Reina
+            </h3>
+
+            <p>
+                Masa de maíz rellena de pollo y palta.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-arepa"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- FEIJOADA -->
+
+        <article class="card card-brasil">
+
+            <img
+                src="https://www.196flavors.com/wp-content/uploads/2024/09/Feijoada-FP.jpg"
+                alt="Feijoada"
+            >
+
+            <span class="tag">
+                Brasil
+            </span>
+
+            <h3>
+                Feijoada
+            </h3>
+
+            <p>
+                Guiso de porotos negros con carnes.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-feijoada"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- PASTEL DE CHOCLO -->
+
+        <article class="card card-chile">
+
+            <img
+                src="https://www.recetasnestle.cl/sites/default/files/srh_recipes/ad97031160d44a707afc89edeacec9f3.jpg"
+                alt="Pastel de Choclo"
+            >
+
+            <span class="tag">
+                Chile
+            </span>
+
+            <h3>
+                Pastel de Choclo
+            </h3>
+
+            <p>
+                Maíz dulce con pino de carne y huevo.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-pastel"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         EUROPA
+         ========================================== -->
+
+    <h2 id="europa" class="titulo-continente">
+        Europa
+    </h2>
+
+    <div class="info-extra oculto">
+
+        <p>
+            🇪🇺 ¡Dato! La gastronomía europea reúne tradiciones
+            muy diferentes de acuerdo con cada país y región.
+        </p>
+
+    </div>
+
+    <button class="btn-ver-mas-continente">
+        Ver más
+    </button>
+
+
+    <section class="contenedor-cards">
+
+
+        <!-- PIZZA -->
+
+        <article class="card card-italia">
+
+            <img
+                src="https://cdn.blog.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas.jpg"
+                alt="Pizza Margherita"
+            >
+
+            <span class="tag">
+                Italia
+            </span>
+
+            <h3>
+                Pizza Margherita
+            </h3>
+
+            <p>
+                Masa fina, tomate y mozzarella.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-pizza"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- PAELLA -->
+
+        <article class="card card-espana">
+
+            <img
+                src="https://www.foodandwine.com/thmb/L38J6jtXQUv7IZhKQIbOwOWxbJ4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/200910-xl-paella-valenciana-01b63ed6b1db4680bf7c708d9a380273.jpg"
+                alt="Paella Valenciana"
+            >
+
+            <span class="tag">
+                España
+            </span>
+
+            <h3>
+                Paella Valenciana
+            </h3>
+
+            <p>
+                Arroz, azafrán y mariscos.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-paella"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- RATATOUILLE -->
+
+        <article class="card card-francia">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuOP4QMSui5jC8s61IzAZZaKh9DT6B1lXrN6jiKkcW6A&s=10"
+                alt="Ratatouille"
+            >
+
+            <span class="tag">
+                Francia
+            </span>
+
+            <h3>
+                Ratatouille
+            </h3>
+
+            <p>
+                Verduras cocidas con tomate y hierbas.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-ratatouille"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- GYROS -->
+
+        <article class="card card-grecia">
+
+            <img
+                src="https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=800&q=80"
+                alt="Gyros"
+            >
+
+            <span class="tag">
+                Grecia
+            </span>
+
+            <h3>
+                Gyros
+            </h3>
+
+            <p>
+                Carne asada, pan pita, tomate y salsa de yogur.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-gyros"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- BACALHAU -->
+
+        <article class="card card-portugal">
+
+            <img
+                src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80"
+                alt="Bacalhau à Brás"
+            >
+
+            <span class="tag">
+                Portugal
+            </span>
+
+            <h3>
+                Bacalhau à Brás
+            </h3>
+
+            <p>
+                Bacalao desmenuzado, papas, huevo y aceitunas.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-bacalhau"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         ASIA
+         ========================================== -->
+
+    <h2 id="asia" class="titulo-continente">
+        Asia
+    </h2>
+
+    <div class="info-extra oculto">
+
+        <p>
+            🌏 ¡Dato! Asia posee una enorme variedad gastronómica
+            y utiliza ingredientes y técnicas diferentes según cada región.
+        </p>
+
+    </div>
+
+    <button class="btn-ver-mas-continente">
+        Ver más
+    </button>
+
+
+    <section class="contenedor-cards">
+
+
+        <!-- SUSHI -->
+
+        <article class="card card-japon">
+
+            <img
+                src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80"
+                alt="Sushi Nigiri"
+            >
+
+            <span class="tag">
+                Japón
+            </span>
+
+            <h3>
+                Sushi Nigiri
+            </h3>
+
+            <p>
+                Arroz de sushi acompañado con pescado fresco.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-sushi"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- CHICKEN CURRY -->
+
+        <article class="card card-india">
+
+            <img
+                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+                alt="Chicken Curry"
+            >
+
+            <span class="tag">
+                India
+            </span>
+
+            <h3>
+                Chicken Curry
+            </h3>
+
+            <p>
+                Pollo cocinado con especias y salsa cremosa.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-curry"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- PAD THAI -->
+
+        <article class="card card-tailandia">
+
+            <img
+                src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=800&q=80"
+                alt="Pad Thai"
+            >
+
+            <span class="tag">
+                Tailandia
+            </span>
+
+            <h3>
+                Pad Thai
+            </h3>
+
+            <p>
+                Fideos de arroz salteados con vegetales y maní.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-padthai"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- DIM SUM -->
+
+        <article class="card card-china">
+
+            <img
+                src="https://www.stretchy-pants.com/wp-content/uploads/2025/07/IMG_1947-scaled.jpg"
+                alt="Dim Sum"
+            >
+
+            <span class="tag">
+                China
+            </span>
+
+            <h3>
+                Dim Sum
+            </h3>
+
+            <p>
+                Pequeños bocados rellenos preparados al vapor.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-dimsum"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+
+
+        <!-- BIBIMBAP -->
+
+        <article class="card card-corea">
+
+            <img
+                src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80"
+                alt="Bibimbap"
+            >
+
+            <span class="tag">
+                Corea del Sur
+            </span>
+
+            <h3>
+                Bibimbap
+            </h3>
+
+            <p>
+                Arroz acompañado de vegetales, huevo y carne.
+            </p>
+
+            <details>
+
+                <summary>
+                    Ver receta
+                </summary>
+
+                <a
+                    href="#detalle-bibimbap"
+                    class="btn-receta"
+                >
+                    Ir a receta y curiosidades ↓
+                </a>
+
+            </details>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         ZONA COMPLETA DE RECETAS
+         ================================================== -->
+
+    <section
+        id="zona-recetas"
+        class="zona-recetas"
+    >
+
+        <h2>
+            🍽️ Recetas, historia y curiosidades
+        </h2>
+
+        <p>
+            Seleccioná una receta para conocer su historia,
+            ingredientes, preparación y algunas curiosidades.
+        </p>
+
+
+
+        <!-- ==========================================
+             EMPANADAS
+             ========================================== -->
+
+        <article
+            id="detalle-empanadas"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇦🇷 Empanadas Criollas
+            </h2>
+
+            <img
+                src="https://www.parati.com.ar/wp-content/uploads/2026/05/EMPANADAS-DESTACADA-749x561.jpg.webp?v=2"
+                alt="Empanadas Criollas"
+            >
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                Las empanadas forman parte de la gastronomía tradicional
+                argentina y se preparan con diferentes rellenos y formas
+                según cada provincia.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Tapas para empanadas</li>
+                <li>Carne vacuna</li>
+                <li>Cebolla</li>
+                <li>Huevo duro</li>
+                <li>Sal y pimienta</li>
+                <li>Comino y pimentón</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Cortar la carne y la cebolla.</li>
+                <li>Cocinar la cebolla y agregar la carne.</li>
+                <li>Condimentar y cocinar unos minutos.</li>
+                <li>Agregar huevo duro picado.</li>
+                <li>Rellenar las tapas.</li>
+                <li>Cerrar las empanadas y hacer el repulgue.</li>
+                <li>Hornear hasta que estén doradas.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                El repulgue puede variar según la región y también puede
+                utilizarse para distinguir diferentes tipos de relleno.
+            </p>
+
+            <a
+                href="#latinoamerica"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             TACOS
+             ========================================== -->
+
+        <article
+            id="detalle-tacos"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇲🇽 Tacos al Pastor
+            </h2>
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvmYqPvhm_nJIhjVBsAzHS3Wxc7tWvgLKC6jczs4Y3QpLoXCltSv0geUrw&s=10"
+                alt="Tacos al Pastor"
+            >
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                Los tacos al pastor son una preparación muy popular de
+                México. Su técnica de cocción tiene influencias de la
+                cocina de Medio Oriente.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Carne de cerdo</li>
+                <li>Chile</li>
+                <li>Achiote</li>
+                <li>Ajo</li>
+                <li>Piña</li>
+                <li>Cilantro</li>
+                <li>Tortillas de maíz</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Preparar la marinada con las especias.</li>
+                <li>Marinar la carne.</li>
+                <li>Cocinar la carne hasta que esté bien dorada.</li>
+                <li>Cortar la carne en trozos pequeños.</li>
+                <li>Servir sobre tortillas de maíz.</li>
+                <li>Agregar piña, cebolla y cilantro.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                La piña es uno de los ingredientes que caracteriza
+                a esta preparación.
+            </p>
+
+            <a
+                href="#latinoamerica"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             CEVICHE
+             ========================================== -->
+
+        <article
+            id="detalle-ceviche"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇵🇪 Ceviche
+            </h2>
+
+            <img
+                src="https://recetasdelabuelo.com/wp-content/uploads/2026/04/Ceviche_peruano_casero.webp"
+                alt="Ceviche"
+            >
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El ceviche es uno de los platos más representativos
+                de la gastronomía peruana.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Pescado fresco</li>
+                <li>Limón</li>
+                <li>Cebolla morada</li>
+                <li>Ají</li>
+                <li>Cilantro</li>
+                <li>Sal</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Cortar el pescado en cubos.</li>
+                <li>Agregar limón y sal.</li>
+                <li>Incorporar cebolla y ají.</li>
+                <li>Agregar cilantro.</li>
+                <li>Servir inmediatamente.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                El limón modifica la textura del pescado mediante
+                un proceso conocido como desnaturalización de proteínas.
+            </p>
+
+            <a
+                href="#latinoamerica"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             AREPA
+             ========================================== -->
+
+        <article
+            id="detalle-arepa"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇨🇴 Arepa Reina
+            </h2>
+
+            <img
+                src="https://www.laylita.com/recetas/wp-content/uploads/2021/02/Arepa-reina-pepiada-receta-venezolana.jpg"
+                alt="Arepa Reina"
+            >
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                La arepa es una preparación tradicional de la región
+                norte de Sudamérica y tiene muchas variedades.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Harina de maíz precocida</li>
+                <li>Agua</li>
+                <li>Sal</li>
+                <li>Pollo cocido</li>
+                <li>Palta</li>
+                <li>Mayonesa</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Preparar la masa con harina, agua y sal.</li>
+                <li>Formar discos.</li>
+                <li>Cocinar las arepas.</li>
+                <li>Preparar el relleno de pollo y palta.</li>
+                <li>Abrir las arepas y rellenarlas.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                Las arepas pueden encontrarse con diferentes tamaños,
+                rellenos y métodos de preparación.
+            </p>
+
+            <a
+                href="#latinoamerica"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             FEIJOADA
+             ========================================== -->
+
+        <article
+            id="detalle-feijoada"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇧🇷 Feijoada
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                La feijoada es un plato tradicional brasileño preparado
+                principalmente con porotos negros y diferentes carnes.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Porotos negros</li>
+                <li>Carne de cerdo</li>
+                <li>Chorizo</li>
+                <li>Cebolla</li>
+                <li>Ajo</li>
+                <li>Sal y pimienta</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Cocinar los porotos.</li>
+                <li>Dorar las carnes.</li>
+                <li>Agregar cebolla y ajo.</li>
+                <li>Incorporar los porotos.</li>
+                <li>Cocinar lentamente hasta integrar los sabores.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                Es especialmente conocida como una comida tradicional
+                para compartir en familia o con amigos.
+            </p>
+
+            <a
+                href="#latinoamerica"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             PASTEL DE CHOCLO
+             ========================================== -->
+
+        <article
+            id="detalle-pastel"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇨🇱 Pastel de Choclo
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El pastel de choclo es una preparación tradicional
+                chilena que combina una cubierta de maíz con un
+                relleno de carne.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Choclo</li>
+                <li>Carne picada</li>
+                <li>Cebolla</li>
+                <li>Huevo duro</li>
+                <li>Leche</li>
+                <li>Sal y pimienta</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Preparar el pino con carne y cebolla.</li>
+                <li>Procesar o moler el choclo.</li>
+                <li>Colocar el pino en una fuente.</li>
+                <li>Agregar huevo duro.</li>
+                <li>Cubrir con la mezcla de choclo.</li>
+                <li>Hornear hasta dorar.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                El contraste entre el relleno salado y el choclo
+                ligeramente dulce es una de sus características.
+            </p>
+
+            <a
+                href="#latinoamerica"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             PIZZA
+             ========================================== -->
+
+        <article
+            id="detalle-pizza"
+            class="receta-detallada"
+        >
+
+
+            <h2>
+                🇮🇹 Pizza Margherita
+            </h2>
+            <img 
+    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002"
+    alt="Pizza Margherita italiana"
+>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                La pizza Margherita es una de las preparaciones más
+                conocidas de la cocina italiana.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Harina</li>
+                <li>Agua</li>
+                <li>Levadura</li>
+                <li>Tomate</li>
+                <li>Mozzarella</li>
+                <li>Albahaca</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Preparar la masa.</li>
+                <li>Dejarla levar.</li>
+                <li>Estirar la masa.</li>
+                <li>Agregar tomate y mozzarella.</li>
+                <li>Hornear.</li>
+                <li>Agregar albahaca.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                Sus colores recuerdan a los colores de la bandera italiana:
+                rojo, blanco y verde.
+            </p>
+
+            <a
+                href="#europa"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             PAELLA
+             ========================================== -->
+
+        <article
+            id="detalle-paella"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇪🇸 Paella Valenciana
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                La paella es una preparación tradicional de España,
+                especialmente relacionada con la región de Valencia.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Arroz</li>
+                <li>Azafrán</li>
+                <li>Caldo</li>
+                <li>Vegetales</li>
+                <li>Mariscos</li>
+                <li>Sal</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Cocinar los ingredientes principales.</li>
+                <li>Agregar el arroz.</li>
+                <li>Incorporar el caldo.</li>
+                <li>Agregar azafrán.</li>
+                <li>Cocinar hasta que el arroz esté listo.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                El nombre del plato está relacionado con el recipiente
+                ancho y poco profundo utilizado para cocinarlo.
+            </p>
+
+            <a
+                href="#europa"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             RATATOUILLE
+             ========================================== -->
+
+        <article
+            id="detalle-ratatouille"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇫🇷 Ratatouille
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                La ratatouille es una preparación tradicional francesa
+                basada en diferentes vegetales.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Tomate</li>
+                <li>Berenjena</li>
+                <li>Zapallín</li>
+                <li>Cebolla</li>
+                <li>Pimiento</li>
+                <li>Hierbas</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Cortar los vegetales.</li>
+                <li>Cocinar la cebolla y el pimiento.</li>
+                <li>Agregar berenjena y zapallín.</li>
+                <li>Incorporar tomate.</li>
+                <li>Condimentar y cocinar lentamente.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                El plato ganó mucha popularidad internacional gracias
+                a la película animada del mismo nombre.
+            </p>
+
+            <a
+                href="#europa"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             GYROS
+             ========================================== -->
+
+        <article
+            id="detalle-gyros"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇬🇷 Gyros
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El gyros es una preparación popular de la gastronomía
+                griega, generalmente servida en pan pita.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Carne</li>
+                <li>Pan pita</li>
+                <li>Tomate</li>
+                <li>Cebolla</li>
+                <li>Yogur</li>
+                <li>Ajo</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Condimentar la carne.</li>
+                <li>Cocinarla hasta dorar.</li>
+                <li>Preparar la salsa de yogur.</li>
+                <li>Calentar el pan pita.</li>
+                <li>Agregar carne y vegetales.</li>
+                <li>Servir con la salsa.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                El nombre hace referencia al movimiento giratorio
+                utilizado en su método tradicional de cocción.
+            </p>
+
+            <a
+                href="#europa"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             BACALHAU
+             ========================================== -->
+
+        <article
+            id="detalle-bacalhau"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇵🇹 Bacalhau à Brás
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El Bacalhau à Brás es una preparación tradicional
+                portuguesa elaborada con bacalao y papas.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Bacalao</li>
+                <li>Papas</li>
+                <li>Huevos</li>
+                <li>Cebolla</li>
+                <li>Aceitunas</li>
+                <li>Perejil</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Desmenuzar el bacalao.</li>
+                <li>Cortar las papas finamente.</li>
+                <li>Cocinar cebolla y bacalao.</li>
+                <li>Agregar las papas.</li>
+                <li>Incorporar los huevos.</li>
+                <li>Terminar con aceitunas y perejil.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                El bacalao ocupa un lugar muy importante dentro
+                de la cocina tradicional portuguesa.
+            </p>
+
+            <a
+                href="#europa"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             SUSHI
+             ========================================== -->
+
+        <article
+            id="detalle-sushi"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇯🇵 Sushi Nigiri
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El nigiri es una variedad de sushi japonesa que combina
+                una porción de arroz con pescado u otros ingredientes.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Arroz para sushi</li>
+                <li>Vinagre de arroz</li>
+                <li>Pescado fresco</li>
+                <li>Sal</li>
+                <li>Azúcar</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Cocinar el arroz.</li>
+                <li>Condimentarlo con vinagre.</li>
+                <li>Formar pequeñas porciones de arroz.</li>
+                <li>Colocar el pescado encima.</li>
+                <li>Servir.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                La palabra nigiri hace referencia a la acción de
+                formar el arroz con las manos.
+            </p>
+
+            <a
+                href="#asia"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             CHICKEN CURRY
+             ========================================== -->
+
+        <article
+            id="detalle-curry"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇮🇳 Chicken Curry
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El curry de pollo reúne técnicas y especias tradicionales
+                de diferentes regiones de la India.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Pollo</li>
+                <li>Cebolla</li>
+                <li>Ajo</li>
+                <li>Tomate</li>
+                <li>Curry</li>
+                <li>Especias</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Dorar el pollo.</li>
+                <li>Cocinar cebolla y ajo.</li>
+                <li>Agregar las especias.</li>
+                <li>Incorporar tomate.</li>
+                <li>Agregar el pollo.</li>
+                <li>Cocinar hasta que esté tierno.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                El término curry puede referirse a diferentes preparaciones
+                y mezclas de especias según la región.
+            </p>
+
+            <a
+                href="#asia"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             PAD THAI
+             ========================================== -->
+
+        <article
+            id="detalle-padthai"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇹🇭 Pad Thai
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El Pad Thai es uno de los platos más conocidos
+                de la gastronomía tailandesa.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Fideos de arroz</li>
+                <li>Huevo</li>
+                <li>Vegetales</li>
+                <li>Salsa de soja</li>
+                <li>Maní</li>
+                <li>Limón</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Hidratar los fideos.</li>
+                <li>Saltear los vegetales.</li>
+                <li>Agregar los fideos.</li>
+                <li>Incorporar el huevo.</li>
+                <li>Agregar la salsa.</li>
+                <li>Servir con maní y limón.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                Es conocido por combinar sabores dulces, salados,
+                ácidos y picantes.
+            </p>
+
+            <a
+                href="#asia"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             DIM SUM
+             ========================================== -->
+
+        <article
+            id="detalle-dimsum"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇨🇳 Dim Sum
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El dim sum reúne diferentes pequeños platos de la
+                gastronomía china que tradicionalmente se comparten.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Masa</li>
+                <li>Carne o vegetales</li>
+                <li>Cebolla</li>
+                <li>Jengibre</li>
+                <li>Salsa de soja</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Preparar el relleno.</li>
+                <li>Colocar el relleno en la masa.</li>
+                <li>Cerrar los pequeños bocados.</li>
+                <li>Cocinar al vapor.</li>
+                <li>Servir con salsa.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                Existen muchísimas variedades de dim sum, con
+                diferentes formas y rellenos.
+            </p>
+
+            <a
+                href="#asia"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+
+
+        <!-- ==========================================
+             BIBIMBAP
+             ========================================== -->
+
+        <article
+            id="detalle-bibimbap"
+            class="receta-detallada"
+        >
+
+            <h2>
+                🇰🇷 Bibimbap
+            </h2>
+
+            <h3>
+                Historia
+            </h3>
+
+            <p>
+                El bibimbap es un plato tradicional coreano compuesto
+                por arroz acompañado de diferentes ingredientes.
+            </p>
+
+            <h3>
+                Ingredientes
+            </h3>
+
+            <ul>
+                <li>Arroz</li>
+                <li>Carne</li>
+                <li>Zanahoria</li>
+                <li>Espinaca</li>
+                <li>Huevo</li>
+                <li>Vegetales variados</li>
+            </ul>
+
+            <h3>
+                Preparación
+            </h3>
+
+            <ol>
+                <li>Cocinar el arroz.</li>
+                <li>Preparar los vegetales.</li>
+                <li>Cocinar la carne.</li>
+                <li>Colocar el arroz en un recipiente.</li>
+                <li>Distribuir los ingredientes encima.</li>
+                <li>Agregar el huevo y servir.</li>
+            </ol>
+
+            <h3>
+                Curiosidades
+            </h3>
+
+            <p>
+                La palabra bibimbap está relacionada con la idea
+                de mezclar el arroz con los diferentes ingredientes.
+            </p>
+
+            <a
+                href="#asia"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </article>
+
+    </section>
+    <section class="contenedor-formulario">
+
+    <h2>Formulario de contacto</h2>
+
+    <form id="formulario">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="5"></textarea>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento">
+
+        <button type="submit">Enviar mensaje</button>
+
+        <p id="resultado"></p>
+
+    </form>
+
+</section>
+<a href="piedra-papel-tijeras.html" class="boton-juego">
+    🪨📄✂️ Jugar Piedra, Papel o Tijera
+</a>
+
+
+</main>
+
+
+<!-- ==========================================
+     PIE DE PÁGINA
+     ========================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Sabores del Mundo-Herrera Jonathan
+    </p>
+
+    <p>
+        Proyecto academico.Todos los derechos reservados.
+    </p>
+</footer>
+
+
+<!-- ==========================================
+     JAVASCRIPT
+     ========================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
 
