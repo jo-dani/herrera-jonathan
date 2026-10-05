@@ -1,1 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+        background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/PHEBJR3XVBGUVNOH4NYVRJL7BE.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #7d2a33;
+    margin-bottom: 30px;
+}
+
+.contenedor-tareas {
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #e67e22;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#nuevaTarea {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#agregarTarea {
+    padding: 10px 15px;
+    margin-left: 5px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#agregarTarea:hover {
+    background-color: #e67e22;
+}
+
+#listaTareas {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+#listaTareas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff3e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#listaTareas li.completada {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.boton-completar {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.boton-eliminar {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.boton-completar:hover {
+    background-color: #219150;
+}
+
+.boton-eliminar:hover {
+    background-color: #7d2a33;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #7d2a33;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.volver:hover {
+    background-color: #e67e22;
+}
 
