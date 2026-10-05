@@ -1,1 +1,823 @@
+/* ==============================
+ESTILOS GENERALES
+============================== */
+
+:root {
+    --color-fondo: #fdf6f0;
+    --color-texto: #333;
+    --color-blanco: #ffffff;
+}
+body.modo-oscuro {
+    --color-fondo: #222;
+    --color-texto: #f5f5f5;
+    --color-blanco: #333;
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: var(--color-fondo);
+color: var(--color-texto);
+letter-spacing: 0.3px;
+background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/PHEBJR3XVBGUVNOH4NYVRJL7BE.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+h1, h2, h3 {
+text-transform: capitalize;
+}
+
+a {
+text-decoration: none;
+}
+
+/* ==============================
+ENCABEZADO
+============================== */
+
+header {
+background-color: #7d2a33;
+color: white;
+text-align: center;
+padding: 20px;
+border-bottom: 5px solid #e67e22;
+box-shadow: 0px 5px 10px gray;
+}
+
+.menu {
+margin-top: 15px;
+background-color: #5a1e25;
+padding: 12px;
+border-radius: 10px;
+}
+
+.menu a {
+color: white;
+background-color: #c0392b;
+padding: 8px 15px;
+margin: 5px;
+border-radius: 20px;
+display: inline-block;
+font-weight: bold;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.menu a:hover {
+background-color: #e67e22;
+transform: scale(1.1);
+}
+
+/* ==============================
+CONTENIDO PRINCIPAL
+============================== */
+
+.seccion-intro {
+background-color: var(--color-blanco);
+padding: 25px;
+margin: 30px;
+border: 2px solid #e67e22;
+border-radius: 15px;
+box-shadow: 5px 5px 10px gray;
+text-align: center;
+}
+
+.titulo-continente {
+text-align: center;
+color: #7d2a33;
+margin-top: 40px;
+border-bottom: 3px solid #e67e22;
+display: table;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 5px;
+}
+
+/* ==============================
+TARJETAS
+============================== */
+
+.contenedor-cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+.card {
+background-color: var(--color-blanco);
+color: var(--color-texto);
+width: 280px;
+padding: 15px;
+margin: 10px;
+border: 2px solid #eee;
+border-radius: 15px;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+text-align: center;
+display: inline-block;
+vertical-align: top;
+transition: all 0.3s ease;
+position: relative;
+overflow: hidden;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 8px 8px 20px gray;
+opacity: 0.95;
+}
+
+.card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 10px;
+border: 2px solid #ddd;
+}
+
+.card::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(255, 255, 255, 0.15);
+border-radius: 15px;
+z-index: 0;
+pointer-events: none;
+}
+
+.card * {
+position: relative;
+z-index: 1;
+}
+
+.tag {
+display: inline-block;
+background-color: #555;
+color: white;
+padding: 3px 10px;
+border-radius: 10px;
+font-size: 12px;
+margin: 10px 0;
+text-transform: uppercase;
+}
+
+/* ==============================
+BOTÓN VER RECETA
+============================== */
+
+details summary {
+list-style: none;
+color: #0d47a1;
+background-color: #e3f2fd;
+padding: 7px 18px;
+border-radius: 20px;
+display: inline-block;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+margin-top: 10px;
+border: 1px solid #90caf9;
+}
+
+details summary::-webkit-details-marker {
+display: none;
+}
+
+details summary:hover {
+background-color: #1976d2;
+color: white;
+transform: scale(1.05);
+}
+
+.btn-receta {
+display: inline-block;
+background-color: #e67e22;
+color: white !important;
+padding: 7px 18px;
+border-radius: 20px;
+font-weight: bold;
+margin-top: 10px;
+transition: all 0.3s ease;
+cursor: pointer;
+border: 2px solid #d35400;
+}
+
+.btn-receta:hover {
+background-color: #d35400;
+transform: scale(1.05);
+}
+
+/* ==============================
+INFORMACIÓN EXTRA
+============================== */
+
+.info-extra {
+background-color: var(--color-blanco);
+padding: 10px;
+border-radius: 10px;
+margin: 15px 20px;
+}
+
+.oculto {
+display: none !important;
+}
+
+.btn-ver-mas-continente {
+background-color: #e67e22;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 15px;
+cursor: pointer;
+margin: 15px auto;
+display: block;
+}
+
+.btn-ver-mas-continente:hover {
+background-color: #d35400;
+}
+
+/* ==============================
+ZONA DE RECETAS
+============================== */
+
+.zona-recetas {
+background-color: #ffffff;
+margin: 50px 20px;
+padding: 30px;
+border: 4px dashed #e67e22;
+border-radius: 20px;
+
+/* Oculta la zona hasta seleccionar una receta */
+display: none;
+
+}
+
+.zona-recetas.activa {
+display: block !important;
+}
+
+.receta-detallada {
+background-color: #fdf6f0;
+padding: 25px;
+margin: 40px 0;
+border-radius: 15px;
+border-left: 6px solid #7d2a33;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+text-align: left;
+
+/* Cada receta comienza oculta */
+display: none;
+
+}
+body.modo-oscuro .receta-detallada {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+body.modo-oscuro .receta-detallada h2,
+body.modo-oscuro .receta-detallada h3 {
+    color: #e67e22;
+}
+
+.receta-detallada.activa {
+display: block !important;
+}
+
+.receta-detallada h2 {
+color: #7d2a33;
+}
+
+.receta-detallada h3 {
+color: #e67e22;
+}
+
+.receta-detallada img {
+width: 100%;
+max-width: 400px;
+height: 250px;
+object-fit: cover;
+border-radius: 15px;
+display: block;
+margin: 15px auto;
+border: 2px solid #ddd;
+}
+
+.receta-detallada ul,
+.receta-detallada ol {
+line-height: 1.7;
+}
+
+.btn-volver {
+display: inline-block;
+background-color: #7d2a33;
+color: white;
+padding: 8px 15px;
+border-radius: 20px;
+text-decoration: none;
+margin-top: 15px;
+transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+background-color: #5a1e25;
+transform: scale(1.05);
+}
+
+/* ==============================
+EJERCICIO 1
+============================== */
+
+#botonCambiar {
+background-color: #e67e22;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 15px;
+cursor: pointer;
+margin: 10px;
+}
+
+#botonCambiar:hover {
+background-color: #d35400;
+}
+
+.botones-tamano {
+margin-top: 15px;
+}
+
+.botones-tamano button {
+background-color: #7d2a33;
+color: white;
+border: none;
+padding: 7px 15px;
+margin: 3px;
+border-radius: 15px;
+cursor: pointer;
+}
+
+.botones-tamano button:hover {
+background-color: #e67e22;
+}
+
+/* ==============================
+EJERCICIO 2
+============================== */
+
+#volverArriba {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 12px 18px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+background: #7d2a33;
+color: white;
+z-index: 999;
+}
+
+#volverArriba:hover {
+background: #e67e22;
+}
+
+/* ==============================
+EJERCICIO 3 - CARRUSEL
+============================== */
+
+.ejercicio-box {
+background: var(--color-blanco);
+padding: 20px;
+margin: 20px;
+border-radius: 15px;
+text-align: center;
+border: 2px solid #e67e22;
+}
+
+.carrusel {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+.carrusel img {
+width: 300px;
+height: 200px;
+border-radius: 10px;
+object-fit: cover;
+}
+
+.carrusel button {
+background-color: #7d2a33;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 18px;
+}
+
+.carrusel button:hover {
+background-color: #e67e22;
+}
+
+/* ==============================
+PIE DE PÁGINA
+============================== */
+
+footer {
+background: #333;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+border-top: 5px solid #e67e22;
+}
+
+/* ==============================
+BOTÓN VER MÁS GENERAL
+============================== */
+
+.btn-ver-mas {
+background-color: #e67e22;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 15px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.btn-ver-mas:hover {
+background-color: #d35400;
+}
+/* ==========================================
+   ENTREGA 3 - PARTE 2
+   FORMULARIO DE CONTACTO
+   ========================================== */
+
+.contenedor-formulario {
+    width: 400px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: var(--color-blanco);
+    border: 2px solid #e67e22;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-formulario h2 {
+    text-align: center;
+    color: #7d2a33;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario input,
+#formulario textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+#formulario button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario button:hover {
+    background-color: #7d2a33;
+}
+
+#resultado {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#botonModo {
+    background-color: #7d2a33;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#botonModo:hover {
+    background-color: #e67e22;
+}
+.boton-quiz {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-quiz:hover {
+    background-color: #d35400;
+}
+.boton-tareas {
+    display: inline-block;
+    background-color: #7d2a33;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-tareas:hover {
+    background-color: #e67e22;
+}
+.boton-juego {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #7d2a33;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-juego:hover {
+    background-color: #e67e22;
+}
+
+.card-argentina {
+ background-image:
+                      url("https://vacacionesporargentina.com/wp-content/uploads/2020/11/waterfall-5040210_1920.jpg");
+    background-size: cover;
+    background-position: center;
+}
+    .card-argentina h3,
+.card-argentina p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-argentina h3,
+body.modo-oscuro .card-argentina p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-mexico {
+    background-image: url("https://www.wamanadventures.com/blog/wp-content/uploads/2026/07/The-stone-structure-stands-out-among-the-trees-and-open-grounds-of-the-archaeological-complex.Waman-Adventures.webp");
+    background-size: cover;
+    background-position: center;
+}
+.card-mexico h3,
+.card-mexico p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-mexico h3,
+body.modo-oscuro .card-mexico p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-peru {
+    background-image: url("https://blog.incarail.com/wp-content/uploads/2024/10/1-May-16-2024-07-49-38-6743-PM.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card-peru h3,
+.card-peru p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-peru h3,
+body.modo-oscuro .card-peru p {
+    background-color: rgba(0, 0, 0, 0.65);
+}   
+.card-colombia {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Xho1XAcNQzn5cD1RV7ID-yHIVAymlE0qQorHiwGYG6vbQ0oGrolWQZp5&s=10");
+    background-size: cover;
+    background-position: center;
+}
+.card-colombia h3,
+.card-colombia p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-colombia h3,
+body.modo-oscuro .card-colombia p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-brasil {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMFY7FEtBV9cGwibV0eHXqvul-uB3j6kZU0NHAvLtmY23FTPNcVRDV5xs&s=10");
+    background-size: cover;
+    background-position: center;
+}
+.card-brasil h3,
+.card-brasil p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-brasil h3,
+body.modo-oscuro .card-brasil p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-chile {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx8aWt98VUpYLXd_VWkyBozD0Pg8AL7JiapP2qJTfGH21mt1dDLFWawmk&s=10");
+    background-size: cover;
+    background-position: center;
+}
+.card-chile h3,
+.card-chile p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-chile h3,
+body.modo-oscuro .card-chile p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-italia {
+    background-image: url("https://services.meteored.com/img/article/se-endereza-la-torre-de-pisa-recupera-4-centimetros-1672763123032_512.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card-italia h3,
+.card-italia p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-italia h3,
+body.modo-oscuro .card-italia p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-espana {
+    background-image: url("https://media.traveler.es/photos/613776823decec3303bac66b/master/w_1600%2Cc_limit/108450.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card-espana h3,
+.card-espana p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+.body.modo-oscuro .card-espana h3,
+body.modo-oscuro .card-espana p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-francia {
+    background-image: url("https://maravilloso.exclusivetravelerclub.com/wp-content/uploads/2019/07/Paris1-600x400.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card-francia h3,
+.card-francia p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-francia h3,
+body.modo-oscuro .card-francia p {
+    background-color: rgba(0, 0, 0, 0.65);
+} 
+.card-grecia {
+    background-image: url("https://media.istockphoto.com/id/475124388/es/foto/white-church-en-la-ciudad-de-oia-en-la-isla-de-santorini-grecia.jpg?s=612x612&w=0&k=20&c=g4KEhVLC3CldeuFK_ki_Z9Nt60NHQRmtEtcHamUvGO4=");
+    background-size: cover;
+    background-position: center;
+}   
+.card-grecia h3,
+.card-grecia p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-grecia h3,
+body.modo-oscuro .card-grecia p {
+    background-color: rgba(0, 0, 0, 0.65);
+}   
+.card-portugal {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuIGazXSK-x2xASLL8n74prMO4cLkPaLVV2vQLEXKw01TCELOi5Qb_-ty_&s=10");
+    background-size: cover;
+    background-position: center;
+}
+.card-portugal h3,
+.card-portugal p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-portugal h3,
+body.modo-oscuro .card-portugal p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-japon {
+    background-image: url(https://i.pinimg.com/originals/71/ce/f2/71cef28e7be6d6f6bc15658cbb486b8e.jpg);    
+    background-size: cover;
+    background-position: center;
+}
+.card-japon h3,
+.card-japon p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-japon h3,
+body.modo-oscuro .card-japon p {
+    background-color: rgba(0, 0, 0, 0.65);
+}   
+.card-india {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7FEgcfZ-YLWcHhxGaHkB3i3ImGoi0w7xoieKb0JyuLQ&s=10");
+    background-size: cover;
+    background-position: center;
+}
+.card-india h3,
+.card-india p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-india h3,
+body.modo-oscuro .card-india p {
+    background-color: rgba(0, 0, 0, 0.65);
+}   
+.card-tailandia {
+    background-image: url("https://d2l4159s3q6ni.cloudfront.net/resize/480x709/filters:max_age(2604800):quality(65)/s3/dam/photos/8b/a2/fa/9a/6aa664509c57921766bbe961278681b031ad5d3c13e465d9a3b794ab.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card-tailandia h3,
+.card-tailandia p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-tailandia h3,
+body.modo-oscuro .card-tailandia p {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.card-china {
+    background-image: url("https://media.istockphoto.com/id/899508826/es/foto/la-gran-muralla-china.jpg?s=612x612&w=0&k=20&c=wEu4vohXyNE29zOpcZ-xrPiNAbOuL8Vcw1atWhfLZa8=");
+    background-size: cover;
+    background-position: center;
+}
+.card-china h3,
+.card-china p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-china h3,
+body.modo-oscuro .card-china p {
+    background-color: rgba(0, 0, 0, 0.65);
+}      
+.card-corea {
+    background-image: url("https://imagenes.elpais.com/resizer/v2/SRWKZJ2O5ZHLJOIOLYURD4EPLU.jpg?auth=4f4ef04742d4a8465118ad446c88a5560d57cf85c3ae8ea0dc7fdf23ce50875a&width=980&height=980&smart=true");
+    background-size: cover;
+    background-position: center;
+}
+.card-corea h3,
+.card-corea p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 5px;
+}
+body.modo-oscuro .card-corea h3,
+body.modo-oscuro .card-corea p {
+    background-color: rgba(0, 0, 0, 0.65);
+}   
 
